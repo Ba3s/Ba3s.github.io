@@ -152,28 +152,28 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-ssrf-redis" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-前端安全-1-XSS" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/12/03/ssrf-redis/">ssrf-redis</a>
+      <a class="article-title" href="/2020/12/04/%E5%89%8D%E7%AB%AF%E5%AE%89%E5%85%A8-1-XSS/">前端安全(1)-XSS</a>
     </h1>
   
 
         
-        <a href="/2020/12/03/ssrf-redis/" class="archive-article-date">
-  	<time datetime="2020-12-03T15:01:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-03</time>
+        <a href="/2020/12/04/%E5%89%8D%E7%AB%AF%E5%AE%89%E5%85%A8-1-XSS/" class="archive-article-date">
+  	<time datetime="2020-12-04T02:18:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-04</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>这是我的第一篇博客。。。</p>
-
+        <h2 id="1-XSS-漏洞简介"><a href="#1-XSS-漏洞简介" class="headerlink" title="1. XSS 漏洞简介"></a>1. XSS 漏洞简介</h2><p>跨站脚本攻击是指恶意攻击者往Web页面里插入恶意Script代码，当用户浏览该页之时，嵌入其中Web里面的Script代码会被执行，从而达到恶意攻击用户的目的。<br>xss漏洞通常是通过php的输出函数将javascript代码输出到html页面中，通过用户本地浏览器执行的，所以xss漏洞关键就是<strong>寻找参数未过滤的输出函数</strong>。<br> 常见的输出函数有： <code>echo printf print print_r sprintf die var-dump var_export</code>.</p>
+        
       
 
       
@@ -185,7 +185,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/12/03/ssrf-redis/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/12/04/%E5%89%8D%E7%AB%AF%E5%AE%89%E5%85%A8-1-XSS/">展开全文 >></a>
         </p>
       
 
@@ -236,7 +236,19 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-        
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
       
 
       
