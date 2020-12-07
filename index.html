@@ -152,6 +152,71 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-前端安全-3-SSRF" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/12/04/%E5%89%8D%E7%AB%AF%E5%AE%89%E5%85%A8-3-SSRF/">前端安全(3)-SSRF</a>
+    </h1>
+  
+
+        
+        <a href="/2020/12/04/%E5%89%8D%E7%AB%AF%E5%AE%89%E5%85%A8-3-SSRF/" class="archive-article-date">
+  	<time datetime="2020-12-04T07:57:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-04</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="1-SSRF简介"><a href="#1-SSRF简介" class="headerlink" title="1. SSRF简介"></a>1. SSRF简介</h2><p>SSRF，服务器端请求伪造，服务器请求伪造，是一个攻击者构造的，用以形成服务器发起的请求的漏洞。通常，SSRF攻击的目标是无法从外部网络访问的内部系统。</p>
+<p>该漏洞的原因主要是因为服务器提供了从其他服务器应用程序获取数据的功能，并且不筛选和限制目标地址。有的大型网站在web应用上提供了从其他服务器获取数据的功能。使用户指定的URL web应用获取图片，下载文件，读取文件内容。攻击者利用有缺陷的web应用作为代理攻击远程和内网的服务器（跳板）。（因为它是由服务端发起的，所以它能够请求到与它相连而与外网隔离的内网。也就是说可以利用一个网络请求的服务，当作跳板进行攻击）</p>
+<p><img src="http://p2.pstatp.com/large/pgc-image/9907e251f785494d92c746eb5df60541" alt="9907e251f785494d92c746eb5df60541"></p>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/12/04/%E5%89%8D%E7%AB%AF%E5%AE%89%E5%85%A8-3-SSRF/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-前端安全-2-CSRF" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
